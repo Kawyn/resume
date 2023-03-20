@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kewin Ignasiak</title>
+    <script src="https://kit.fontawesome.com/c8dfbd7d1d.js" crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <a href="./index.html"><span class="hash">#</span>home</a>
+            <a href="./index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
+            <a href="./about.html"><span class="hash">#</span>o mnie</a>
+            <div class="nav-mobile"
+                onclick="document.querySelector('.nav-mobile-menu').style.display = document.querySelector('.nav-mobile-menu').style.display === 'flex' ? 'none' : 'flex'">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav-space"> </div>
+        </div>
+        <div class="nav-mobile-menu">
+            <a href="./index.html"><span class="hash">#</span>home</a>
+            <a href="./index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
+            <a href="./about.html"><span class="hash">#</span>o mnie</a>
+        </div>
+    </nav>
+
+    <header>
+        <canvas id="canvas"> </canvas>
+        <div>
+            <h2>Witam!</h2>
+            <h1>Jestem Kewin!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, similique qui! Esse mollitia veritatis
+                culpa omnis aliquam nostrum eaque cumque nisi voluptates aut voluptatum autem dolorem corporis, ipsam
+                facere ex.</p>
+        </div>
+    </header>
+
+    <article id="projects-anchorn">
+        <h1>#projekty</h1>
+        <div id="projects">
+            <div class="project"
+                style="grid-area: 1 / 1 / 2 / 3; background-image: url('https://www.limboski.pl/images/biography/biography.jpg');">
+                <p>
+                    sada
+                </p>
+            </div>
+            <div class="project"
+                style="grid-area: 2 / 1 / 4 / 2 ; background-image: url('https://www.limboski.pl/images/biography/biography.jpg');">
+                <p>
+                    sada
+                </p>
+            </div>
+            <div class="project"
+                style="grid-area: 2 / 2 / 3 / 3; background-image: url('https://www.limboski.pl/images/biography/biography.jpg');">
+                <p>
+                    sada
+                </p>
+            </div>
+            <div class="project"
+                style="grid-area: 3 / 2 / 4 / 3; background-image: url('https://www.limboski.pl/images/biography/biography.jpg');">
+                <p>
+                    sada
+                </p>
+            </div>
+
+        </div>
+    </article>
+
+
+    <footer>
+        <div>
+            <div class="contact-icon">
+                <a href="https://jaszczab.itch.io/">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="https://github.com/Kawyn">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+            <div class="contact-icon">
+                <a href="https://github.com/Kawyn">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <hr />
+        <p>by Kewin Ignasiak</p>
+    </footer>
+
+    <script src="./scripts/animation.js"> </script>
+</body>
+
+</html>
