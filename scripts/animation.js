@@ -7,8 +7,6 @@ canvas.height = canvas.offsetHeight;
 
 const r = Math.pow(canvas.width / 10, 2) + Math.pow(canvas.height / 10, 2);
 
-console.log(r);
-
 const stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
     x = 200; // Number of stars

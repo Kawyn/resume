@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/c8dfbd7d1d.js" crossorigin="anonymous"> </script>
 
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" />
 
     <title>Kewin Ignasiak</title>
 </head>
@@ -17,9 +17,9 @@
 <body>
     <nav>
         <div class="nav-bar">
-            <a href="./index.html"><span class="hash">#</span>home</a>
-            <a href="./index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
-            <a href="./about.html"><span class="hash">#</span>o mnie</a>
+            <a href="../index.html"><span class="hash">#</span>home</a>
+            <a href="../index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
+            <a href="../about.html"><span class="hash">#</span>o mnie</a>
             <div class="nav-mobile"
                 onclick="document.querySelector('.nav-mobile-menu').style.display = document.querySelector('.nav-mobile-menu').style.display === 'flex' ? 'none' : 'flex'">
                 <i class="fa-solid fa-bars"></i>
@@ -27,15 +27,17 @@
             <div class="nav-space"> </div>
         </div>
         <div class="nav-mobile-menu">
-            <a href="./index.html"><span class="hash">#</span>home</a>
-            <a href="./index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
-            <a href="./about.html"><span class="hash">#</span>o mnie</a>
+            <a href="../index.html"><span class="hash">#</span>home</a>
+            <a href="../index.html#projects-anchorn"><span class="hash">#</span>projekty</a>
+            <a href="../about.html"><span class="hash">#</span>o mnie</a>
         </div>
     </nav>
 
     <article class="text-article">
         <div class="text-article-body">
-            <h2 id="omnie"><span class="hash">#</span>o mnie</h2>
+
+
+            <h2 id="omnie"><span class="hash">#</span>łańcuchy markova</h2>
             <hr />
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellendus, minima voluptatibus incidunt
@@ -50,6 +52,33 @@
                 facilis cumque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maxime modi
                 consequuntur iste ea earum totam ratione?
             </p>
+
+            <pre>
+                <code>
+for (let i = 0; i &lt;= input.length - message.data.length; i++) {
+
+    let depth = 0;
+    let c = chain, w = input[i + depth]; 
+
+    while (depth !== message.data.length - 1) {
+
+        if (!c[w])
+            c[w] = {};
+
+        c = c[w];
+
+        depth++;
+
+        w = input[i + depth];
+    }
+
+    if (!c[w])
+        c[w] = 0;
+
+    c[w]++;
+}
+                </code>
+            </pre>
             <h2 id="zainteresowania"><span class="hash">#</span>zainteresowania</h2>
             <hr />
             <p>
