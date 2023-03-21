@@ -65,7 +65,6 @@ header>div {
 
 .text-article-body>p {
     padding: 0 10%;
-    text-align: justify;
     text-indent: 50px;
     font-size: 1.15em;
 }
@@ -194,6 +193,7 @@ pre {
     background-color: #111;
     width: 80%;
     margin: auto;
+    white-space: pre-wrap;
 }
 
 
@@ -214,13 +214,11 @@ pre {
 }
 
 .project a {
-    align-items: center;
     align-items: end;
     background-color: #000a;
     color: white;
     display: block;
     font-size: 25px;
-    height: 60px;
     justify-content: center;
     margin: 0;
     padding-right: 50px;
@@ -264,8 +262,6 @@ pre {
     display: flex;
     flex-direction: row;
 }
-
-.project img {}
 
 .project-image {
     background-image: url('./images/biography.jpg');
@@ -378,7 +374,7 @@ footer>p {
     }
 
     .text-article-body {
-        width: 90%;
+        width: 95%;
     }
 
     .text-article-left-border-wrapper {
