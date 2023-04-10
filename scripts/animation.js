@@ -1,27 +1,32 @@
+const NUMBER_OF_POINTS = 200;
 
-var canvas = document.getElementById("canvas"),
-    ctx = canvas.getContext('2d');
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
 
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 
 const r = Math.pow(canvas.width / 10, 2) + Math.pow(canvas.height / 10, 2);
 
-const stars = [], // Array that contains the stars
-    FPS = 60, // Frames per second
-    x = 200; // Number of stars
+const stars = [];
+const FPS = 60;
 
-// Push stars to array
+class Point {
 
-for (var i = 0; i < x; i++) {
-    stars.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() + 1,
-        vx: Math.floor(Math.random() * 50) - 25,
-        vy: Math.floor(Math.random() * 50) - 25
-    });
+    constructor(x, y, radius, vx, vy) {
+
+        this.x = x;
+        this.y = y;
+
+        this.radius = radius;
+
+        this.vx = vx;
+        this.vy = vy;
+    }
 }
+
+for (let i = 0; i < NUMBER_OF_POINTS; i++)
+    stars.push(new Point(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() + 1, Math.floor(Math.random() * 50) - 25, Math.floor(Math.random() * 50) - 25));
 
 // Draw the scene
 
