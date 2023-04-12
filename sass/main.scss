@@ -1,0 +1,54 @@
+@import 'common';
+
+@import 'nav';
+@import 'header';
+
+@import 'projects';
+@import 'articles';
+@import 'footer';
+
+* {
+    color: $text-color;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 15%;
+
+    h2 {
+        padding: 0 10%;
+    }
+}
+
+#canvas {
+    width: 100%;
+}
+
+
+a {
+    transition: 0.15s;
+    word-wrap: break-word;
+}
+
+a:hover {
+    color: #ed2b45;
+}
+
+pre {
+    background-color: #111;
+    margin: auto;
+    white-space: pre-wrap;
+    width: 80%;
+}
+
+.hash {
+    color: #ed2b45;
+}

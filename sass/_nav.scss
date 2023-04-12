@@ -1,0 +1,70 @@
+@import 'common';
+
+nav {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+
+    .nav-bar {
+        padding-right: 5%;
+        align-items: center;
+        background: $secondary-color;
+        border-bottom: 2px solid $primary-color;
+        display: flex;
+        height: 60px;
+        justify-content: right;
+
+        a {
+            color: $text-color;
+            display: none;
+            font-size: 20px;
+            margin: 20px;
+            text-decoration: none;
+            transition: 0.15s ease-out;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            @include media-query(tablet) {
+                display: block;
+            }
+        }
+
+        &-mobile {
+            color: $text-color;
+            font-size: 26px;
+            text-align: center;
+            display: block;
+
+            @include media-query(tablet) {
+                display: none;
+            }
+        }
+    }
+
+    .nav-mobile-menu {
+        background: $secondary-color;
+        border-bottom: 2px solid $primary-color;
+        display: none;
+        flex-direction: column;
+        padding: 10px 0;
+        position: absolute;
+        width: 100%;
+
+        a {
+            display: block;
+            font-size: 20px;
+            height: 30px;
+            margin-right: 25px;
+            padding: 10px;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

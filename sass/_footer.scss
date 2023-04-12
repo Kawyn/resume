@@ -1,0 +1,44 @@
+@import 'common';
+
+footer {
+
+    $content-width: 70%;
+
+    align-items: center;
+    background-color: $primary-color;
+    border-top: 2px solid $tertiary-color;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+
+    .footer-contact {
+        display: flex;
+
+        &-icon {
+            color: $text-color;
+            font-size: 45px;
+            margin: 10px;
+            padding: 5px;
+            transition: ease-in 0.15s;
+
+            &:hover {
+                @include scale-up-transition(1.1);
+            }
+        }
+    }
+
+    >hr {
+        border: none;
+        border-bottom: 2px solid $tertiary-color;
+        width: $content-width;
+    }
+
+    >p {
+        color: $text-color;
+        font-size: 1vh;
+        margin: 0;
+        text-align: right;
+        width: $content-width;
+    }
+}

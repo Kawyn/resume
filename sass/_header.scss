@@ -1,0 +1,45 @@
+@import 'common';
+
+header {
+    background-color: $secondary-color;
+    border-bottom: 2px solid $primary-color;
+    height: calc(100vh - 60px - 2px);
+    position: relative;
+
+    >* {
+        height: 100%;
+        position: absolute;
+    }
+
+    >div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >* {
+            width: 80%;
+            margin: 0;
+
+            @include media-query(tablet) {
+                min-width: 700px;
+                width: 50%;
+            }
+        }
+
+        >h2 {
+            color: $text-color;
+            font-size: 18pt;
+        }
+
+        >h1 {
+            color: $primary-color;
+            font-size: 40pt;
+        }
+
+        >p {
+            color: $text-color;
+            font-size: 24pt;
+        }
+    }
+}
